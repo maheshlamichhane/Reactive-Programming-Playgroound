@@ -9,13 +9,15 @@ public class Demo {
 
     public static void main(String[] args) throws InterruptedException {
 
-        demo4();
+        demo1();
     }
 
     private static void demo1(){
         var publisher = new PublisherImpl();
         var subscriber = new SubscriberImpl();
         publisher.subscribe(subscriber);
+        subscriber.getSubscription().request(3);
+        subscriber.getSubscription().request(5);
     }
 
     private static void demo2() throws InterruptedException {
