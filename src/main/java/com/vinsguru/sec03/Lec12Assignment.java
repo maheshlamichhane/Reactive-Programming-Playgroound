@@ -10,7 +10,6 @@ public class Lec12Assignment {
         var subscriber = new StockPriceObserver();
         client.getPriceChanges()
                 .subscribe(subscriber);
-
         Util.sleepSeconds(20);
     }
 }
