@@ -24,7 +24,7 @@ public class DefaultSubscriber<T> implements Subscriber<T> {
 
     @Override
     public void onNext(T email) {
-        logger.info("{}",email);
+        logger.info("{} received: {}",name,email);
 
     }
 
