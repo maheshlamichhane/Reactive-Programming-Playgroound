@@ -20,8 +20,7 @@ public class Lec12Then {
         saveRecords(records)
                 .then(sendNotification(records))
                 .subscribe(Util.subscriber());
-
-
+        
         Util.sleepSeconds(5);
     }
 
